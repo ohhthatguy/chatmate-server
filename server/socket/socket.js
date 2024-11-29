@@ -33,7 +33,7 @@ const cert = fs.readFileSync('192.168.1.95.pem')
 const io = socketio(server,{cors: {
 //   origin: 'http://localhost:3001',      //react frontend is runing in 3001,
   origin: process.env.NODE_ENV === 'production' ? 
-  ['https://chatmatev1-theta.vercel.app']:
+  'https://chatmatev1-2j4d5iqoq-bhaskar-thakullas-projects.vercel.app':
   [`${process.env.URL_TO_FRONTEND}`,'*'],
   methods: ["GET", "POST", "UPDATE", "DELETE"]
 
